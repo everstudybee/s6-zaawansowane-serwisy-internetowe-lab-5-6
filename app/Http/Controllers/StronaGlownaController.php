@@ -6,7 +6,8 @@
     
     class StronaGlownaController extends Controller
     {
-        protected function generujHead(): string
+        // cały ten kod jest teraz w pliku main.blade.php
+        /*protected function generujHead(): string
         {
             return '
                 <!DOCTYPE HTML>
@@ -60,11 +61,15 @@
                 </body>
                 </html>
                 ';
-        }
+        }*/
         
         public function __invoke(): string
         {
-            //robimy test czy instalacja nam działa, kod klasy wzięty z kodu, który pisaliśmy na lab 1-4
-            return $this->generujHead().$this->generujNaglowek().$this->generujStopke();
+            // // robimy test czy instalacja nam działa, kod klasy wzięty z kodu, który pisaliśmy na lab 1-4
+            // return $this->generujHead().$this->generujNaglowek().$this->generujStopke();
+            
+            // korzystamy z szablonu blade o nazwie index.blade.php
+            // a ten plik wywoła main.blade.php i swoją treść wklei w miejscu @yield('content')
+            return view('index');
         }
     }
