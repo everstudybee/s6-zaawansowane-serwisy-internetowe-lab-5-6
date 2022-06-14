@@ -1,1 +1,1 @@
-require('./materialize');
+require('./materialize.min');

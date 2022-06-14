@@ -8,10 +8,11 @@
             @foreach($internalEvents as $internalEvent)
                 <div class="col s12 m4 13">
                     <div class="card">
-                        <div class="card-title">
+                        <div class="card-content">
                             <span class="card-title">{{$internalEvent->Title}}</span>
-                            <blockquote>Opis</blockquote>
-                            Opis zabawy!
+                            <blockquote>{{$internalEvent->ShortDescription}}</blockquote>
+                            {{-- zapis poniżej powoduje interpretowanie kodu HTML --}}
+                            {!! $internalEvent->ContentHTML !!}
                         </div>
                         <div class="card-action">
                             <form method="post">
