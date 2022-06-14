@@ -1,9 +1,8 @@
 <?php
     
-    use Illuminate\Support\Facades\Route;
-    
-    // dodajemy ścieżkę do aktualnie utworzonego kontrolera
+    use App\Http\Controllers\InternalEventsController;
     use App\Http\Controllers\StronaGlownaController;
+    use Illuminate\Support\Facades\Route;
     
     /*
     |--------------------------------------------------------------------------
@@ -16,10 +15,15 @@
     |
     */
     
-    // Route::get('/', function ()
-    // {
-    //     return view('welcome');
-    // });
-
-//Tworzymy swój routing
+    // oryginalna strona startowa
+    Route::get('/welcome', function ()
+    {
+        return view('welcome');
+    });
+    
+    // tworzymy swój routing
     Route::get('/', StronaGlownaController::class);
+    
+    // routing dla widoku internalEvents/index.blade.php
+    Route::get('/wydarzenia-wewnetrzne', [InternalEventsController::class, 'index']);
+    
