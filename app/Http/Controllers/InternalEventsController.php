@@ -15,7 +15,7 @@
             
             // pobieramy z bazy rekordy, które są aktywne
             // na końcu, musimy wywołać metodę get ()
-            $internalEvents = InternalEvent::where('IsActive', '=', true)->get();
+            $internalEvents = (new InternalEvent)->where('IsActive', '=', true)->get();
             
             // przekazujemy do widoku pobrane przez model dane
             return view("internalEvents.index", ['internalEvents' => $internalEvents]);
@@ -24,14 +24,14 @@
         // zwraca widok edycji
         public function edit($id)
         {
-            $internalEvent = InternalEvent::find($id); //metody find () nie trzeba definiować
+            $internalEvent = (new InternalEvent)->find($id); //metody find () nie trzeba definiować
             return view('internalEvents.edit', ['internalEvent' => $internalEvent]);
         }
         
         // aktualizuje event w bazie danych
         public function update(Request $request, $id)
         {
-            $internalEvent = InternalEvent::find($id); //metody find () nie trzeba definiować
+            $internalEvent = (new InternalEvent)->find($id); //metody find () nie trzeba definiować
             $internalEvent->Title = $request->input('Title');
             $internalEvent->Link = $request->input('Link');
             $internalEvent->ShortDescription = $request->input('ShortDescription');
