@@ -38,3 +38,6 @@
     
     // dodaje nowe wydarzenie do bazy danych
     Route::post('/wydarzenia-wewnetrzne/dodawanie', [InternalEventsController::class, 'addToDB']);
+    
+    // routing dla usuwania wydarzenia, wersja z zajęć deaktywuje wydarzenie, ale nie usuwa
+    Route::get('/wydarzenia-wewnetrzne/usun/{id}', [InternalEventsController::class, 'delete']);

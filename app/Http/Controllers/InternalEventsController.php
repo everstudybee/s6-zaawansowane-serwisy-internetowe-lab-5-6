@@ -67,4 +67,12 @@
             // przekierowuje do widoku wszystkich wydarzeń
             return redirect('/wydarzenia-wewnetrzne');
         }
+        
+        // deaktywuje w bazie dane wydarzenie, ale nie usuwa
+        public function delete($id) {
+            $internalEvent = (new InternalEvent)->find($id); //metody find () nie trzeba definiować
+            $internalEvent->IsActive = false;
+            $internalEvent->save();
+            return redirect('/wydarzenia-wewnetrzne');
+        }
     }
