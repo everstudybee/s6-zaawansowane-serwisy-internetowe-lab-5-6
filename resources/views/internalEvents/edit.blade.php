@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <form class="col s12" method="post" action="/wydarzenia-wewnetrzne/aktualizuj/{{$internalEvent->Id}}">
+            <form class="col s12" method="post" action="/wydarzenia-wewnetrzne/aktualizacja/{{$internalEvent->Id}}">
                 {{-- zabezpieczenie przed Cross-site request forgeries --}}
                 @csrf
                 <div class="input-field col s4">
@@ -27,7 +27,7 @@
 
                 <div class="col s12">
                     <div class="submit-field input-field">
-                        <button class="btn waves-effect waves-light" type="submit">Edycja
+                        <button class="btn waves-effect waves-light" type="submit">Zapisz
                             <i class="material-icons right">edit</i>
                         </button>
                     </div>

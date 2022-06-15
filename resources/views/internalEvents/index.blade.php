@@ -11,8 +11,9 @@
                         <div class="card-content">
                             <span class="card-title">{{$internalEvent->Title}}</span>
                             <blockquote>{{$internalEvent->ShortDescription}}</blockquote>
+                            <a href="{{$internalEvent->Link}}">{{$internalEvent->Title}}</a>
                             {{-- zapis poniżej powoduje interpretowanie kodu HTML --}}
-                            {!! $internalEvent->ContentHTML !!}
+                            <p>{!! $internalEvent->ContentHTML !!}</p>
                         </div>
                         <div class="card-action">
                             {{-- pełna ścieżka wpisana ręcznie --}}

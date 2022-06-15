@@ -29,3 +29,6 @@
     
     // routing dla edycji wydarzenia, wąsiasty nawias oznacza, że jako zmienną id przejmiemy wartość string w tym miejscu
     Route::get('/wydarzenia-wewnetrzne/edycja/{id}', [InternalEventsController::class, 'edit']);
+    
+    // routing dla aktualizacji wydarzenia, wąsiasty nawias oznacza, że jako zmienną id przejmiemy wartość string w tym miejscu
+    Route::post('/wydarzenia-wewnetrzne/aktualizacja/{id}', [InternalEventsController::class, 'update']);
