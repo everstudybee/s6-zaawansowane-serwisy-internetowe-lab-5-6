@@ -1,8 +1,10 @@
-@extends('main')
+{{-- rozwiązanie z tytułem z zajęć--}}
+@extends('main', ['title'=>'Edycja wydarzenia'])
 
-@section('title')
-    Edycja Wydarzenia
-@endsection
+{{-- moje rozwiązanie --}}
+{{--@section('title')--}}
+{{--    Edycja Wydarzenia--}}
+{{--@endsection--}}
 
 {{-- dyrektywa importuje inny blade template i pozwala tworzyć hierarchię --}}
 @include('internalEvents.menu')

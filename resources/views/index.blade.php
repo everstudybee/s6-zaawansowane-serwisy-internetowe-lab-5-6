@@ -1,9 +1,11 @@
 {{-- informujemy bladea o tym, że ten fragment rozszeża main --}}
+{{-- w tym miejscu kożystamy z tego, że title ma wartość domyślną ustawiona w main.blade.php --}}
 @extends('main')
 
-@section('title')
-    Strona Główna
-@endsection
+{{--moje rozwiązanie--}}
+{{--@section('title')--}}
+{{--    Strona Główna--}}
+{{--@endsection--}}
 
 {{-- nazwa content jest taka sama jak @yield('content') w pliku main.blade.php --}}
 @section('content')

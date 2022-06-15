@@ -1,10 +1,11 @@
 {{-- w folderze internalEvents są wszystkie szablony widoków dla internal events --}}
+{{-- rozwiązanie z tytułem z zajęć--}}
+@extends('main' , ['title'=>'Wydarzenia Wewnętrzne'])
 
-@extends('main')
-
-@section('title')
-    Lista Wydarzeń
-@endsection
+{{-- moje rozwiązanie --}}
+{{--@section('title')--}}
+{{--    Lista Wydarzeń--}}
+{{--@endsection--}}
 
 {{-- dyrektywa importuje inny blade template i pozwala tworzyć hierarchię --}}
 @include('internalEvents.menu')
