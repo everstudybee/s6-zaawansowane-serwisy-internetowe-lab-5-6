@@ -10,10 +10,11 @@ Dla testów `.gitignore` nie ignoruje niektórych folderów, które powinien
 3. `php artisan serve` - najpierw uruchomić serwer artisana
 4. `npm run watch` - po uruchomieniu Webpacka za pierwszym razem zostaną zainstalowane potrzebne zależności. Po drugim uruchomieniu wszystko będzie działało.
 
-### JS i CSS kompilowany do app.js
+### JS i CSS kompilowany za pomocą Webpack
 1. `materialize.js` kompilowany jest do app.js za pomocą Webpack. Szczegóły konfiguracji w pliku `resources\js\app.js`.
 2. `materialize.css` kompilowany jest do app.js za pomocą Webpack. Szczegóły konfiguracji w pliku `resources\css\app.css`.
 3. Konfiguracja Webpack w pliku `wepack.mix.js`
+4. Najpierw trzeba skonfigurować i odpalić `Automatyczne odświeżanie strony`.
 
 ### MVC
 ![mvc](docs/img/mvc.png)
