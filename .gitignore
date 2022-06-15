@@ -1,10 +1,10 @@
-# All entries marked #TODO were commented on intentionally as part of the tests
+# All entries marked #OFF were commented on intentionally as part of the tests
 
 # Personal settings
 _tmp/
 _resources/
-#TODO .idea/
-#TODO .vscode/
+#OFF .idea/
+#OFF .vscode/
 
 # Created by https://www.toptal.com/developers/gitignore/api/phpstorm,laravel,composer
 # Edit at https://www.toptal.com/developers/gitignore?templates=phpstorm,laravel,composer
@@ -35,7 +35,7 @@ public_html/storage
 public_html/hot
 
 storage/*.key
-#TODO .env
+#OFF .env
 .env.backup
 Homestead.yaml
 Homestead.json
@@ -47,49 +47,49 @@ Homestead.json
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff
-#TODO .idea/**/workspace.xml
-#TODO .idea/**/tasks.xml
-#TODO .idea/**/usage.statistics.xml
-#TODO .idea/**/dictionaries
-#TODO .idea/**/shelf
+#OFF .idea/**/workspace.xml
+#OFF .idea/**/tasks.xml
+#OFF .idea/**/usage.statistics.xml
+#OFF .idea/**/dictionaries
+#OFF .idea/**/shelf
 
 # AWS User-specific
-#TODO .idea/**/aws.xml
+#OFF .idea/**/aws.xml
 
 # Generated files
-#TODO .idea/**/contentModel.xml
+#OFF .idea/**/contentModel.xml
 
 # Sensitive or high-churn files
-#TODO .idea/**/dataSources/
-#TODO .idea/**/dataSources.ids
-#TODO .idea/**/dataSources.local.xml
-#TODO .idea/**/sqlDataSources.xml
-#TODO .idea/**/dynamic.xml
-#TODO .idea/**/uiDesigner.xml
-#TODO .idea/**/dbnavigator.xml
+#OFF .idea/**/dataSources/
+#OFF .idea/**/dataSources.ids
+#OFF .idea/**/dataSources.local.xml
+#OFF .idea/**/sqlDataSources.xml
+#OFF .idea/**/dynamic.xml
+#OFF .idea/**/uiDesigner.xml
+#OFF .idea/**/dbnavigator.xml
 
 # Gradle
-#TODO .idea/**/gradle.xml
-#TODO .idea/**/libraries
+#OFF .idea/**/gradle.xml
+#OFF .idea/**/libraries
 
 # Gradle and Maven with auto-import
 # When using Gradle or Maven with auto-import, you should exclude module files,
 # since they will be recreated, and may cause churn.  Uncomment if using
 # auto-import.
-#TODO .idea/artifacts
-#TODO .idea/compiler.xml
-#TODO .idea/jarRepositories.xml
-#TODO .idea/modules.xml
-#TODO .idea/*.iml
-#TODO .idea/modules
-#TODO *.iml
-#TODO *.ipr
+#OFF .idea/artifacts
+#OFF .idea/compiler.xml
+#OFF .idea/jarRepositories.xml
+#OFF .idea/modules.xml
+#OFF .idea/*.iml
+#OFF .idea/modules
+#OFF *.iml
+#OFF *.ipr
 
 # CMake
 cmake-build-*/
 
 # Mongo Explorer plugin
-#TODO .idea/**/mongoSettings.xml
+#OFF .idea/**/mongoSettings.xml
 
 # File-based project format
 *.iws
@@ -98,16 +98,16 @@ cmake-build-*/
 out/
 
 mpeltonen/sbt-idea plugin
-#TODO .idea_modules/
+#OFF .idea_modules/
 
 # JIRA plugin
 atlassian-ide-plugin.xml
 
 # Cursive Clojure plugin
-#TODO .idea/replstate.xml
+#OFF .idea/replstate.xml
 
 # SonarLint plugin
-#TODO .idea/sonarlint/
+#OFF .idea/sonarlint/
 
 # Crashlytics plugin (for Android Studio and IntelliJ)
 com_crashlytics_export_strings.xml
@@ -116,43 +116,43 @@ crashlytics-build.properties
 fabric.properties
 
 # Editor-based Rest Client
-#TODO .idea/httpRequests
+#OFF .idea/httpRequests
 
 # Android studio 3.1+ serialized cache file
-#TODO .idea/caches/build_file_checksums.ser
+#OFF .idea/caches/build_file_checksums.ser
 
 ### PhpStorm Patch ###
 # Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
 
 *.iml
 # modules.xml
-#TODO  .idea/misc.xml
+#OFF  .idea/misc.xml
 *.ipr
 
 # Sonarlint plugin
 # https://plugins.jetbrains.com/plugin/7973-sonarlint
-#TODO .idea/**/sonarlint/
+#OFF .idea/**/sonarlint/
 
 # SonarQube Plugin
 # https://plugins.jetbrains.com/plugin/7238-sonarqube-community-plugin
-#TODO .idea/**/sonarIssues.xml
+#OFF .idea/**/sonarIssues.xml
 
 # Markdown Navigator plugin
 # https://plugins.jetbrains.com/plugin/7896-markdown-navigator-enhanced
-#TODO .idea/**/markdown-navigator.xml
-#TODO .idea/**/markdown-navigator-enh.xml
-#TODO .idea/**/markdown-navigator/
+#OFF .idea/**/markdown-navigator.xml
+#OFF .idea/**/markdown-navigator-enh.xml
+#OFF .idea/**/markdown-navigator/
 
 # Cache file creation bug
 # See https://youtrack.jetbrains.com/issue/JBR-2257
-#TODO .idea/$CACHE_FILE$
+#OFF .idea/$CACHE_FILE$
 
 # CodeStream plugin
 # https://plugins.jetbrains.com/plugin/12206-codestream
-#TODO .idea/codestream.xml
+#OFF .idea/codestream.xml
 
 # Azure Toolkit for IntelliJ plugin
 # https://plugins.jetbrains.com/plugin/8053-azure-toolkit-for-intellij
-#TODO .idea/**/azureSettings.xml
+#OFF .idea/**/azureSettings.xml
 
 # End of https://www.toptal.com/developers/gitignore/api/phpstorm,laravel,composer

@@ -15,16 +15,14 @@
                             {!! $internalEvent->ContentHTML !!}
                         </div>
                         <div class="card-action">
-                            <form method="post">
-                                <label for="id"></label>
-                                <input id="id" hidden name="Id" value="1">
-                                <button type="submit" class="btn-floating btn-small waves-effect waves-teal" name="akcja" value="widokEdycja">
-                                    <i class="material-icons">edit</i>
-                                </button>
-                                <button type="submit" class="btn-floating btn-small waves-effect waves-teal red" name="akcja" value="usun">
-                                    <i class="material-icons">delete</i>
-                                </button>
-                            </form>
+                            {{-- pełna ścieżka wpisana ręcznie --}}
+                            <a href="wydarzenia-wewnetrzne/edycja/{{$internalEvent->Id}}" class="btn-floating btn-small waves-effect waves-teal">
+                                <i class="material-icons">edit</i>
+                            </a>
+                            {{-- scieżka generowana automatycznie, dodaje na początku scieżkę w której aktualnie jesteśmy --}}
+                            <a href="{{url()->current()}}/usun/{{$internalEvent->Id}}" class="btn-floating btn-small waves-effect waves-teal red">
+                                <i class="material-icons">delete</i>
+                            </a>
                         </div>
                     </div>
                 </div>
