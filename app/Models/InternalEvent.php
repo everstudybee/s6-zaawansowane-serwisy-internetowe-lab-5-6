@@ -14,11 +14,11 @@
         
         // nazwa tabeli, przechowującej nasz model
         // nazwę tabeli możemy napisać wielką literą InternalEvents, nawet gdy w bazie tablica nazywa się internalevents
-        protected $table = "InternalEvents";
-        // nazwa pola z Id
-        protected $primaryKey = 'Id';
-        // nazwa pola daty utworzenia
         const CREATED_AT = 'CreationDateTime';
-        // nazwa pola daty edycji
+        // nazwa pola z Id
         const UPDATED_AT = 'EditDateTime';
+        // nazwa pola daty utworzenia
+        protected $table = "InternalEvents";
+        // nazwa pola daty edycji
+        protected $primaryKey = 'Id';
     }

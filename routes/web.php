@@ -32,3 +32,9 @@
     
     // routing dla aktualizacji wydarzenia, wąsiasty nawias oznacza, że jako zmienną id przejmiemy wartość string w tym miejscu
     Route::post('/wydarzenia-wewnetrzne/aktualizacja/{id}', [InternalEventsController::class, 'update']);
+    
+    // wyświetla formularz do dodania nowego wydarzenia
+    Route::get('/wydarzenia-wewnetrzne/nowy', [InternalEventsController::class, 'create']);
+    
+    // dodaje nowe wydarzenie do bazy danych
+    Route::post('/wydarzenia-wewnetrzne/dodawanie', [InternalEventsController::class, 'addToDB']);
