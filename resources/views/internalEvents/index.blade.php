@@ -6,6 +6,9 @@
     Lista Wydarzeń
 @endsection
 
+{{-- dyrektywa importuje inny blade template i pozwala tworzyć hierarchię --}}
+@include('internalEvents.menu')
+
 @section('content')
     <div class="container">
         <div class="row">
@@ -21,7 +24,7 @@
                         </div>
                         <div class="card-action">
                             {{-- pełna ścieżka wpisana ręcznie --}}
-                            <a href="wydarzenia-wewnetrzne/edycja/{{$internalEvent->Id}}" class="btn-floating btn-small waves-effect waves-teal">
+                            <a href="/wydarzenia-wewnetrzne/edycja/{{$internalEvent->Id}}" class="btn-floating btn-small waves-effect waves-teal">
                                 <i class="material-icons">edit</i>
                             </a>
                             {{-- scieżka generowana automatycznie, dodaje na początku scieżkę w której aktualnie jesteśmy --}}

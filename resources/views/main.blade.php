@@ -15,16 +15,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col s12">
-            <form method="POST">
-                <button class="btn waves-effect waves-light" type="submit" name="akcja" value="widokNowy">Nowy
-                    <i class="material-icons right">add</i>
-                </button>
-                <button class="btn waves-effect waves-light" type="submit" name="akcja" value="">Wszystkie
-                    <i class="material-icons right">list</i>
-                </button>
-            </form>
-        </div>
+        @yield('menu')
     </div>
 </div>
 <hr/>

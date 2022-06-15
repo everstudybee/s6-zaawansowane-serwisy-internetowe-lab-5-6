@@ -4,6 +4,9 @@
     Edycja Wydarzenia
 @endsection
 
+{{-- dyrektywa importuje inny blade template i pozwala tworzyć hierarchię --}}
+@include('internalEvents.menu')
+
 @section('content')
     <div class="container">
         <div class="row">
