@@ -2,11 +2,15 @@
 
 @extends('main')
 
+@section('title')
+    Lista Wydarzeń
+@endsection
+
 @section('content')
     <div class="container">
         <div class="row">
             @foreach($internalEvents as $internalEvent)
-                <div class="col s12 m4 13">
+                <div class="col s12 m4 l3">
                     <div class="card">
                         <div class="card-content">
                             <span class="card-title">{{$internalEvent->Title}}</span>
