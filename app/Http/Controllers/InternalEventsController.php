@@ -11,7 +11,12 @@
         public function index()
         {
             // w zmiennej zapisywane są wszystkie pozycje z tabeli InternalEvents
-            $internalEvents = InternalEvent::all(); // metoda all () jest z klasy bazowej Model
+            //$internalEvents = InternalEvent::all(); // metoda all () jest z klasy bazowej Model
+            
+            // pobieramy z bazy rekordy, które są aktywne
+            // na końcu, musimy wywołać metodę get ()
+            $internalEvents = InternalEvent::where('IsActive', '=', true)->get();
+            
             // przekazujemy do widoku pobrane przez model dane
             return view("internalEvents.index", ['internalEvents' => $internalEvents]);
         }
