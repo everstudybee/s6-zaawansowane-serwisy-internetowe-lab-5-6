@@ -49,5 +49,7 @@
 
 @section('scripts')
      <script src="/js/validator.js"></script>
-     <script>initializeValidatorRequired();</script>
+
+     {{-- po uruchomieniu kompilacji validator.js przez webpack, przeniesione bezpośrednio do pliku --}}
+     {{-- <script>initializeValidatorRequired();</script> --}}
 @endsection
