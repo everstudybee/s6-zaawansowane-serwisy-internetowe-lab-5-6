@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b060d91-8814-41e7-9af6-f7e32ccb1b4b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/validator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/validator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/validator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +223,7 @@
       <workItem from="1655261361308" duration="4056000" />
       <workItem from="1655265477373" duration="1014000" />
       <workItem from="1655266521073" duration="12683000" />
-      <workItem from="1655280566931" duration="15979000" />
+      <workItem from="1655280566931" duration="18103000" />
     </task>
     <servers />
   </component>
