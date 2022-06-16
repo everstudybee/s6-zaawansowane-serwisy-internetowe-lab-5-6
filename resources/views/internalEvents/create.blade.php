@@ -20,6 +20,7 @@
                     {{-- clasa validatro-required jest potrzebna do wywoływania walidacji z pliku validator.js --}}
                     <input id="nazwa" type="text" name="Title" class="validate validator-required">
                     <label for="nazwa">Nazwa</label>
+                    <span class="helper-text" id="nazwa-helper"></span>
                 </div>
                 <div class="input-field col s4">
                     <i class="material-icons prefix">insert_link</i>
