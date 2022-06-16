@@ -21,19 +21,26 @@ function initializeValidatorRequired () {
     for (let i = 0; i < elements.length; i++) {
         elements.item(i)
             .addEventListener('focusout', validateRequired);
+        validateRequiredElement(elements.item(i));
     }
 }
 
-// funkcja walidująca wywoływana za każdym razem, gdy opuszczamy pole (focusout)
+// funkcja wywoływana podczas uruchamiania strony i walidująca wstępnie wypełnienie pól
+// chodzi o to by submit nie działał także zaraz po uruchomieniu strony
 function validateRequired (event) {
+    validateRequiredElement(event.target);
+}
+
+// funkcja walidująca wywoływana za każdym razem, gdy opuszczamy pole (focusout)
+function validateRequiredElement (elem) {
     // warunek wyświetla alert, gdy opuszczamy input, który jest pusty
-    const helper = document.querySelector(`#${event.target.id}-helper`);
-    if (!event.target.value) {
-        helper.setAttribute('data-error', 'To pole jest wymagane');
-        event.target.classList.add('invalid');
+    const helper = document.querySelector(`#${elem.id}-helper`);
+    if (!elem.value) {
+        helper.setAttribute('data-error', 'pole wymagane');
+        elem.classList.add('invalid');
     } else {
-        helper.setAttribute('data-success', 'Poprawnie');
-        event.target.classList.add('valid');
+        helper.setAttribute('data-success', '✔️');
+        elem.classList.add('valid');
     }
 }
 

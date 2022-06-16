@@ -24,16 +24,19 @@
                 </div>
                 <div class="input-field col s4">
                     <i class="material-icons prefix">insert_link</i>
-                    <input id="link" type="text" name="Link" class="validate">
+                    <input id="link" type="text" name="Link" class="validate validator-required">
                     <label for="link">Link</label>
+                    <span class="helper-text" id="link-helper"></span>
                 </div>
                 <div class="input-field col s12">
-                    <textarea id="textarea1" class="materialize-textarea" name="ShortDescription"></textarea>
+                    <textarea id="textarea1" class="materialize-textarea validate validator-required" name="ShortDescription"></textarea>
                     <label for="textarea1">Krótki opis</label>
+                    <span class="helper-text" id="textarea1-helper"></span>
                 </div>
                 <div class="input-field col s12">
-                    <textarea id="textarea2" class="materialize-textarea" name="ContentHTML"></textarea>
+                    <textarea id="textarea2" class="materialize-textarea validate validator-required" name="ContentHTML"></textarea>
                     <label for="textarea2">Zawartość</label>
+                    <span class="helper-text" id="textarea2-helper"></span>
                 </div>
 
                 <div class="col s12">
@@ -49,8 +52,8 @@
 @endsection
 
 @section('scripts')
-     <script src="/js/validator.js"></script>
+    <script src="/js/validator.js"></script>
 
-     {{-- po uruchomieniu kompilacji validator.js przez webpack, przeniesione bezpośrednio do pliku --}}
-     {{-- <script>initializeValidatorRequired();</script> --}}
+    {{-- po uruchomieniu kompilacji validator.js przez webpack, przeniesione bezpośrednio do pliku --}}
+    {{-- <script>initializeValidatorRequired();</script> --}}
 @endsection
