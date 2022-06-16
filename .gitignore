@@ -124,7 +124,7 @@ fabric.properties
 ### PhpStorm Patch ###
 # Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
 
-*.iml
+#OFF *.iml
 # modules.xml
 #OFF  .idea/misc.xml
 *.ipr
