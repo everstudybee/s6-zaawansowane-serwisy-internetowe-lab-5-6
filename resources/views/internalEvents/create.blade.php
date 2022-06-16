@@ -17,7 +17,8 @@
                 @csrf
                 <div class="input-field col s4">
                     <i class="material-icons prefix">input</i>
-                    <input id="nazwa" type="text" name="Title" class="validate">
+                    {{-- clasa validatro-required jest potrzebna do wywoływania walidacji z pliku validator.js --}}
+                    <input id="nazwa" type="text" name="Title" class="validate validator-required">
                     <label for="nazwa">Nazwa</label>
                 </div>
                 <div class="input-field col s4">
@@ -44,4 +45,9 @@
             </form>
         </div>
     </div>
+@endsection
+
+@section('scripts')
+     <script src="/js/validator.js"></script>
+     <script>initializeValidatorRequired();</script>
 @endsection

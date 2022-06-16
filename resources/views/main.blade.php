@@ -24,12 +24,10 @@
 
 @yield('content')
 
+{{-- wczytujemy skrtypt który jest generowany przez Webpack i zawiera materialize.js i validate.js --}}
 <script src="/js/app.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const elems = document.querySelectorAll('select');
-        const instances = M.FormSelect.init(elems, {});
-    });
-</script>
+
+{{-- używamy do wczytania skryptu z poziomu strony create.blade.php jeśli nie używamy Webpack--}}
+@yield('scripts')
 </body>
 </html>

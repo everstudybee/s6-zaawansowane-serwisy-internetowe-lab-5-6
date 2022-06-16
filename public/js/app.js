@@ -7,7 +7,13 @@
   \*****************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-__webpack_require__(/*! ./materialize.min */ "./resources/js/materialize.min.js");
+__webpack_require__(/*! ./materialize.min */ "./resources/js/materialize.min.js"); // do czego służy ten script, był skopiowany z wcześniejszego projektu i przeniosłem go do Webpack
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  var elems = document.querySelectorAll('select');
+  var instances = M.FormSelect.init(elems, {});
+});
 
 /***/ }),
 
