@@ -12,7 +12,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <form class="col s12" method="post" action="/wydarzenia-wewnetrzne/dodawanie">
+            <form class="col s12 validator-submit" method="post" action="/wydarzenia-wewnetrzne/dodawanie">
                 {{-- zabezpieczenie przed Cross-site request forgeries --}}
                 @csrf
                 <div class="input-field col s4">
