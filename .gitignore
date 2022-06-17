@@ -3,8 +3,8 @@
 # Personal settings
 _tmp/
 _resources/
-#OFF .idea/
-#OFF .vscode/
+.idea/
+.vscode/
 
 # Created by https://www.toptal.com/developers/gitignore/api/phpstorm,laravel,composer
 # Edit at https://www.toptal.com/developers/gitignore?templates=phpstorm,laravel,composer
@@ -35,7 +35,7 @@ public_html/storage
 public_html/hot
 
 storage/*.key
-#OFF .env
+.env
 .env.backup
 Homestead.yaml
 Homestead.json
@@ -47,49 +47,49 @@ Homestead.json
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff
-#OFF .idea/**/workspace.xml
-#OFF .idea/**/tasks.xml
-#OFF .idea/**/usage.statistics.xml
-#OFF .idea/**/dictionaries
-#OFF .idea/**/shelf
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
 
 # AWS User-specific
-#OFF .idea/**/aws.xml
+.idea/**/aws.xml
 
 # Generated files
-#OFF .idea/**/contentModel.xml
+.idea/**/contentModel.xml
 
 # Sensitive or high-churn files
-#OFF .idea/**/dataSources/
-#OFF .idea/**/dataSources.ids
-#OFF .idea/**/dataSources.local.xml
-#OFF .idea/**/sqlDataSources.xml
-#OFF .idea/**/dynamic.xml
-#OFF .idea/**/uiDesigner.xml
-#OFF .idea/**/dbnavigator.xml
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
 
 # Gradle
-#OFF .idea/**/gradle.xml
-#OFF .idea/**/libraries
+.idea/**/gradle.xml
+.idea/**/libraries
 
 # Gradle and Maven with auto-import
 # When using Gradle or Maven with auto-import, you should exclude module files,
 # since they will be recreated, and may cause churn.  Uncomment if using
 # auto-import.
-#OFF .idea/artifacts
-#OFF .idea/compiler.xml
-#OFF .idea/jarRepositories.xml
-#OFF .idea/modules.xml
-#OFF .idea/*.iml
-#OFF .idea/modules
-#OFF *.iml
-#OFF *.ipr
+.idea/artifacts
+.idea/compiler.xml
+.idea/jarRepositories.xml
+.idea/modules.xml
+.idea/*.iml
+.idea/modules
+*.iml
+*.ipr
 
 # CMake
 cmake-build-*/
 
 # Mongo Explorer plugin
-#OFF .idea/**/mongoSettings.xml
+.idea/**/mongoSettings.xml
 
 # File-based project format
 *.iws
@@ -98,16 +98,16 @@ cmake-build-*/
 out/
 
 mpeltonen/sbt-idea plugin
-#OFF .idea_modules/
+.idea_modules/
 
 # JIRA plugin
 atlassian-ide-plugin.xml
 
 # Cursive Clojure plugin
-#OFF .idea/replstate.xml
+.idea/replstate.xml
 
 # SonarLint plugin
-#OFF .idea/sonarlint/
+.idea/sonarlint/
 
 # Crashlytics plugin (for Android Studio and IntelliJ)
 com_crashlytics_export_strings.xml
@@ -116,43 +116,43 @@ crashlytics-build.properties
 fabric.properties
 
 # Editor-based Rest Client
-#OFF .idea/httpRequests
+.idea/httpRequests
 
 # Android studio 3.1+ serialized cache file
-#OFF .idea/caches/build_file_checksums.ser
+.idea/caches/build_file_checksums.ser
 
 ### PhpStorm Patch ###
 # Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
 
-#OFF *.iml
+*.iml
 # modules.xml
-#OFF  .idea/misc.xml
+.idea/misc.xml
 *.ipr
 
 # Sonarlint plugin
 # https://plugins.jetbrains.com/plugin/7973-sonarlint
-#OFF .idea/**/sonarlint/
+.idea/**/sonarlint/
 
 # SonarQube Plugin
 # https://plugins.jetbrains.com/plugin/7238-sonarqube-community-plugin
-#OFF .idea/**/sonarIssues.xml
+.idea/**/sonarIssues.xml
 
 # Markdown Navigator plugin
 # https://plugins.jetbrains.com/plugin/7896-markdown-navigator-enhanced
-#OFF .idea/**/markdown-navigator.xml
-#OFF .idea/**/markdown-navigator-enh.xml
-#OFF .idea/**/markdown-navigator/
+.idea/**/markdown-navigator.xml
+.idea/**/markdown-navigator-enh.xml
+.idea/**/markdown-navigator/
 
 # Cache file creation bug
 # See https://youtrack.jetbrains.com/issue/JBR-2257
-#OFF .idea/$CACHE_FILE$
+.idea/$CACHE_FILE$
 
 # CodeStream plugin
 # https://plugins.jetbrains.com/plugin/12206-codestream
-#OFF .idea/codestream.xml
+.idea/codestream.xml
 
 # Azure Toolkit for IntelliJ plugin
 # https://plugins.jetbrains.com/plugin/8053-azure-toolkit-for-intellij
-#OFF .idea/**/azureSettings.xml
+.idea/**/azureSettings.xml
 
 # End of https://www.toptal.com/developers/gitignore/api/phpstorm,laravel,composer
