@@ -6,6 +6,7 @@
 4. Dla testów `.gitignore` nie ignoruje niektórych folderów, które powinien
 
 ### POCZĄTKOWA KONFIGURACJA
+Po pobraniu projektu z GitHub
 
 1. Polecenia wydajemy w terminalu w folderze projektu
 2. `composer self-update` - updatuj composer, jeśli jest nowsza wersja
@@ -13,11 +14,12 @@
 4. `composer update` - zrób update wszystkich zainstalowanych pakietów
 5. Konfiguracja `charset` i `collation` w pliku `config/database.php`
 6. Zamień nazwę pliku `.env.example` na `.env`
-7. `Konfiguracja podłączenia do bazy danych`. W pliku `.env` pozycja `B_DATABASE=` podaj nazwę bazy danych i ewentualnie skonfiguruj inne parametry takie jak IP, PORT, USER i PASSWORD.
-8. `Utwórz pustą bazę danych` o ustalonej w punkcie `7.` nazwie i collation ustawionym w punkcie `5.` collation
-9. `php artisan migrate` - uruchom migrację, komenda utworzy [1] tablicę zawierającą dane, [2] tablicę z informacjami o migracjach, [3] tablicę zawierającą osobiste tokeny
-10. `php artisan db:seed` - wgraj dane testowe do bazy danych
-11. `npm install` - zainstaluj pakiety node z pliku package.json, są potrzebne w dalszej konfiguracji, zostanie utworzony folder node_modules ze wszystkimi pakietami
+7. `php artisan key:generate` - wygeneruj unikalny klucz aplikacji (NIEZBĘDNY KROK), będzie on zapisany w pliku .env
+8. `Konfiguracja podłączenia do bazy danych`. W pliku `.env` pozycja `B_DATABASE=` podaj nazwę bazy danych i ewentualnie skonfiguruj inne parametry takie jak IP, PORT, USER i PASSWORD.
+9. `Utwórz pustą bazę danych` o ustalonej w punkcie `7.` nazwie i collation ustawionym w punkcie `5.` collation
+10. `php artisan migrate` - uruchom migrację, komenda utworzy [1] tablicę zawierającą dane, [2] tablicę z informacjami o migracjach, [3] tablicę zawierającą osobiste tokeny
+11. `php artisan db:seed` - wgraj dane testowe do bazy danych
+12. `npm install` - zainstaluj pakiety node z pliku package.json, są potrzebne w dalszej konfiguracji, zostanie utworzony folder node_modules ze wszystkimi pakietami
 
 ### AUTOMATYCZNE ODŚWIEŻANIE STRONY
 

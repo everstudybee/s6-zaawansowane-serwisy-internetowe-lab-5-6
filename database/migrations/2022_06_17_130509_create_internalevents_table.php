@@ -14,7 +14,7 @@ class CreateInternaleventsTable extends Migration
     public function up()
     {
         Schema::create('internalevents', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('Id');
             $table->string('Title', 64);
             $table->string('Link', 64);
             $table->boolean('IsPublic');
