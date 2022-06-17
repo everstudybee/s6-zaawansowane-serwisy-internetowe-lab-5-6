@@ -5,6 +5,17 @@
 3. Repozytorium https://github.com/kzrepo/s6-zaawansowane-serwisy-internetowe-laravel
 4. Dla testów `.gitignore` nie ignoruje niektórych folderów, które powinien
 
+### POCZĄTKOWA KONFIGURACJA
+
+1. Polecenia wydajemy w folderze projektu
+2. `composer self-update` - updatuj composer
+3. `composer install` - zainstaluj wszystkie potrzebne pakiety
+4. `composer update` - zrób update wszystkich zainstalowanych pakietów
+5. Konfiguracja `charset` i `collation` w pliku `config/database.php`
+6. Konfiguracja podłączenia do bazy danych w pliku `.env` pozycja `B_DATABASE=`
+7. Utworzyć pustą bazę danych o ustalonej w punkcie `7.` nazwie i w punkcie `6.` collation.
+8. `php artisan migrate` - uruchom migrację, komenda utworzy bazę danych
+
 ### AUTOMATYCZNE ODŚWIEŻANIE STRONY
 
 1. https://stackoverflow.com/questions/49392001/laravel-project-auto-refresh-after-changes
