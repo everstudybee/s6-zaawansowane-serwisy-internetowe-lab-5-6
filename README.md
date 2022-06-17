@@ -15,6 +15,7 @@
 6. Konfiguracja podłączenia do bazy danych w pliku `.env` pozycja `B_DATABASE=`
 7. Utworzyć pustą bazę danych o ustalonej w punkcie `7.` nazwie i w punkcie `6.` collation.
 8. `php artisan migrate` - uruchom migrację, komenda utworzy bazę danych
+9. `php artisan db:seed` - wgraj dane testowe do bazy danych
 
 ### AUTOMATYCZNE ODŚWIEŻANIE STRONY
 
