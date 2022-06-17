@@ -6,6 +6,7 @@
 4. Dla testów `.gitignore` nie ignoruje niektórych folderów, które powinien
 
 ### POCZĄTKOWA KONFIGURACJA
+
 Po pobraniu projektu z GitHub
 
 1. Polecenia wydajemy w terminalu w folderze projektu
@@ -16,7 +17,7 @@ Po pobraniu projektu z GitHub
 6. Zamień nazwę pliku `.env.example` na `.env`
 7. `php artisan key:generate` - wygeneruj unikalny klucz aplikacji (NIEZBĘDNY KROK), będzie on zapisany w pliku .env
 8. `Konfiguracja podłączenia do bazy danych`. W pliku `.env` pozycja `B_DATABASE=` podaj nazwę bazy danych i ewentualnie skonfiguruj inne parametry takie jak IP, PORT, USER i PASSWORD.
-9. `Utwórz pustą bazę danych` o ustalonej w punkcie `7.` nazwie i collation ustawionym w punkcie `5.` collation
+9. `Utwórz pustą bazę danych` o ustalonej w punkcie `8.` nazwie i collation ustawionym w punkcie `5.` collation
 10. `php artisan migrate` - uruchom migrację, komenda utworzy [1] tablicę zawierającą dane, [2] tablicę z informacjami o migracjach, [3] tablicę zawierającą osobiste tokeny
 11. `php artisan db:seed` - wgraj dane testowe do bazy danych
 12. `npm install` - zainstaluj pakiety node z pliku package.json, są potrzebne w dalszej konfiguracji, zostanie utworzony folder node_modules ze wszystkimi pakietami
@@ -27,10 +28,6 @@ Po pobraniu projektu z GitHub
 2. `mix.browserSync('127.0.0.1:8000');` - dodać na końcu pliku webpack.mix.js na końcu
 3. `php artisan serve` - najpierw uruchomić serwer artisan
 4. `npm run watch` - po uruchomieniu Webpack za pierwszym razem zostaną zainstalowane potrzebne zależności. Po drugim uruchomieniu wszystko będzie działało.
-
-### WYGENEROWANIE KLUCZA LARAVEL
-
-
 
 ### JS i CSS KOMPILOWANY ZA POMOCĄ WEBPACK
 
